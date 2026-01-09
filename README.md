@@ -10,7 +10,7 @@ To find the correlation, I accessed the online resource provided in the assignme
 * **Interactive Extraction:** I visited `max.ge/aiml_midterm/56234_html/` where data was displayed as blue dots.
 * **Coordinate Recording:** By hovering over each point, I manually recorded the X and Y coordinates.
 
-![Step 1: Website Interface](step1.png)
+![Step 1: Website Interface](1.png)
 *Figure 1: Accessing the data points on the provided web portal.*
 
 ### 1.2 Implementation in PyCharm
@@ -18,7 +18,7 @@ I implemented the Pearson correlation calculation using Python in the PyCharm en
 * **Backend Fix:** To avoid Tcl/Tk errors, I used `matplotlib.use('Agg')` for non-interactive rendering.
 * **Calculation:** Used `numpy.corrcoef` to determine the strength of the linear relationship.
 
-![Step 2: PyCharm Environment](step2.png)
+![Step 2: PyCharm Environment](2.png)
 *Figure 2: Python code implementation and environment setup.*
 
 ### 1.3 Results and Output
@@ -26,7 +26,7 @@ The execution was successful, resulting in a high correlation coefficient.
 * **Pearson's Correlation Coefficient (r):** 0.9890
 * **Interpretation:** This value indicates a very strong positive linear correlation between the coordinates.
 
-![Step 3: Execution Result](step3.png)
+![Step 3: Execution Result](3.png)
 *Figure 3: Console output showing the calculated correlation coefficient.*
 
 ### 1.4 Mathematical Formula
