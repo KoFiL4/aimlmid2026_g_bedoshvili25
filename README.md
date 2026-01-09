@@ -47,4 +47,39 @@ The generated graph illustrates the data points along with the calculated trend 
 The dataset for this task has been uploaded to the repository as required.
 * **Link to Data File:** [g_bedoshvili25_56234.csv](./g_bedoshvili25_56234.csv)
 
-2.2 Implementation in PyCharmI developed a machine learning pipeline using the scikit-learn library.Backend Fix: To ensure compatibility with the PyCharm environment and avoid Tcl/Tk errors, I used matplotlib.use('Agg').Algorithm: I utilized the LogisticRegression algorithm to build the predictive model.Warnings Handling: I implemented warnings.filterwarnings('ignore') to ensure a clean console output.Figure 5: Python implementation and successful script execution in PyCharm.2.3 Results and Model EvaluationThe model showed exceptional performance on the test data, achieving high accuracy.Accuracy Score: 0.9680 (96.8%)Model Parameters:Coefficients: [[0.00799, 0.91153, 0.44636, 0.76820]]Intercept: -9.425282.4 Mathematical FoundationThe model predicts the probability of an email being spam using the Sigmoid Function:$$P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \sum \beta_i x_i)}}$$2.5 Visualization: Class DistributionAs part of the data insights (Requirement 2.7), I generated a bar chart to study the balance of the dataset:Figure 6: Bar chart showing the distribution of Spam vs. Legitimate emails.Insight: The dataset is well-balanced, which ensures that the model learns to identify both classes effectively without bias.2.6 Visualization: Confusion MatrixTo evaluate the model's accuracy in detail, I generated a graphical heatmap of the Confusion Matrix:Figure 7: Heatmap visualization of the model's prediction accuracy.Insight: The model correctly identified 347 legitimate emails and 379 spam emails, with minimal misclassifications, proving its reliability for cybersecurity applications.
+### 2.2 Implementation in PyCharm
+I developed a machine learning pipeline using the `scikit-learn` library.
+* **Backend Fix:** To ensure compatibility with the PyCharm environment and avoid Tcl/Tk errors, I used `matplotlib.use('Agg')`.
+* **Algorithm:** I utilized the `LogisticRegression` algorithm to build the predictive model.
+* **Warnings Handling:** I implemented `warnings.filterwarnings('ignore')` to ensure a clean console output.
+
+![Step 1: Code Execution](4.png)
+*Figure 5: Python implementation and successful script execution in PyCharm.*
+
+### 2.3 Results and Model Evaluation
+The model showed exceptional performance on the test data, achieving high accuracy.
+* **Accuracy Score:** 0.9680 (96.8%)
+* **Model Parameters:**
+    * **Coefficients:** `[[0.00799, 0.91153, 0.44635, 0.76820]]`
+    * **Intercept:** `-9.42528`
+
+### 2.4 Mathematical Foundation
+The model predicts the probability of an email being spam using the **Sigmoid Function**:
+
+$$P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \sum \beta_i x_i)}}$$
+
+
+
+### 2.5 Visualization: Class Distribution
+As part of the data insights (Requirement 2.7), I generated a bar chart to study the balance of the dataset:
+
+![Class Distribution](class_distribution.png)
+*Figure 6: Bar chart showing the distribution of Spam vs. Legitimate emails.*
+**Insight:** The dataset is well-balanced, which ensures that the model learns to identify both classes effectively without bias.
+
+### 2.6 Visualization: Confusion Matrix
+To evaluate the model's accuracy in detail, I generated a graphical heatmap of the Confusion Matrix:
+
+![Confusion Matrix](confusion_matrix.png)
+*Figure 7: Heatmap visualization of the model's prediction accuracy.*
+**Insight:** The model correctly identified 347 legitimate emails and 379 spam emails, with minimal misclassifications, proving its reliability for cybersecurity applications.
