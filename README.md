@@ -38,3 +38,11 @@ The generated graph illustrates the data points along with the calculated trend 
 
 ![Correlation Graph](correlation_graph.png)
 *Figure 4: Final scatter plot with regression line.*
+
+
+---
+## Assignment 2: Spam Email Detection (20 Points)
+
+### 2.1 Data Source
+The dataset for this task has been uploaded to the repository as required.
+* **Link to Data File:** [g_bedoshvili25_56234.csv](./g_bedoshvili25_56234.csv)
