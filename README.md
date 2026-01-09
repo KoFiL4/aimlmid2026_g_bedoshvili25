@@ -46,3 +46,24 @@ The generated graph illustrates the data points along with the calculated trend 
 ### 2.1 Data Source
 The dataset for this task has been uploaded to the repository as required.
 * **Link to Data File:** [g_bedoshvili25_56234.csv](./g_bedoshvili25_56234.csv)
+
+* ### 2.2 Model Training & Console Output
+The Logistic Regression model was trained with a 70/30 data split. 
+
+**Execution Screenshot:**
+![PyCharm Console Output](4.png)
+*Figure: Screenshot of the code execution showing model parameters and accuracy.*
+
+### 2.3 Evaluation Results
+* **Accuracy Score:** 0.968 (96.8%)
+* **Model Coefficients:** `[[0.00799344, 0.9115324, 0.44635652, 0.76819631]]`
+* **Intercept:** `[-9.42528002]`
+
+### 2.4 Confusion Matrix Visualization
+The heatmap below shows the model's performance in classifying Legitimate and Spam emails.
+
+![Confusion Matrix](confusion_matrix.png)
+
+### 2.5 & 2.6 Prediction Examples
+* **Legitimate Example:** (150 words, 1 link, 5 capital words, 0 spam words) -> **Result: Legitimate**
+* **Spam Example:** (800 words, 15 links, 50 capital words, 12 spam words) -> **Result: Spam**
