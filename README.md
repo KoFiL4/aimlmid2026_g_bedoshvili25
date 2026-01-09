@@ -47,23 +47,43 @@ The generated graph illustrates the data points along with the calculated trend 
 The dataset for this task has been uploaded to the repository as required.
 * **Link to Data File:** [g_bedoshvili25_56234.csv](./g_bedoshvili25_56234.csv)
 
-* ### 2.2 Model Training & Console Output
-The Logistic Regression model was trained with a 70/30 data split. 
+2.2 Model Training
+I implemented a Logistic Regression model using the scikit-learn library. The data was split into 70% for training and 30% for testing to ensure unbiased evaluation.
 
-**Execution Screenshot:**
-![PyCharm Console Output](4.png)
-*Figure: Screenshot of the code execution showing model parameters and accuracy.*
+Model Coefficients: [[0.00799344, 0.9115324, 0.44635652, 0.76819631]]
 
-### 2.3 Evaluation Results
-* **Accuracy Score:** 0.968 (96.8%)
-* **Model Coefficients:** `[[0.00799344, 0.9115324, 0.44635652, 0.76819631]]`
-* **Intercept:** `[-9.42528002]`
+Intercept: [-9.42528002]
 
-### 2.4 Confusion Matrix Visualization
-The heatmap below shows the model's performance in classifying Legitimate and Spam emails.
+2.3 Evaluation Results
+The model's performance was measured using the test set, showing high reliability in detecting spam.
 
-![Confusion Matrix](confusion_matrix.png)
+Accuracy Score: 0.9680 (96.8%)
 
-### 2.5 & 2.6 Prediction Examples
-* **Legitimate Example:** (150 words, 1 link, 5 capital words, 0 spam words) -> **Result: Legitimate**
-* **Spam Example:** (800 words, 15 links, 50 capital words, 12 spam words) -> **Result: Spam**
+Confusion Matrix:
+
+True Negatives: 347
+
+True Positives: 379
+
+False Positives: 8
+
+False Negatives: 16
+
+2.7 Visualizations and Data Insights
+Visual 1: Class Distribution Study
+Explanation: This bar chart illustrates the balance of the dataset. There is a near-equal distribution between legitimate and spam emails, which prevents the model from being biased toward one class and ensures better generalization.
+
+Visual 2: Confusion Matrix Heatmap
+Explanation: This heatmap provides a graphical view of the model's accuracy. The high values on the main diagonal (347 and 379) indicate that the majority of emails were classified correctly, with very few errors in either direction.
+
+2.5 & 2.6 Prediction Examples
+Example 1 (Legitimate): - Input: 150 words, 1 link, 5 capitals, 0 spam words.
+
+Result: Legitimate (Probability: 0.0062)
+
+Example 2 (Spam): - Input: 800 words, 15 links, 50 capitals, 12 spam words.
+
+Result: Spam (Probability: 1.0000)
+
+2.8 Execution Evidence
+The following screenshot shows the clean execution of the script in the PyCharm console, confirming the model parameters, accuracy, and successful generation of visualizations.
