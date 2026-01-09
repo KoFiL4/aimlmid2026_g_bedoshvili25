@@ -49,7 +49,7 @@ The final scatter plot demonstrates the tight alignment of the data points along
 ### 2.1 Data Source and Features
 For this assignment, I developed a machine learning model to distinguish between legitimate and spam emails using a personalized dataset.
 * **Dataset:** The file `g_bedoshvili25_56234.csv` contains various email metadata.
-* **Dataset:** The file ` https://max.ge/aiml_midterm/g_bedoshvili25_56234_csv/` contains various email metadata.
+* **Dataset:** The source file [a_migineishvili25_93254.csv](./a_migineishvili25_93254.csv) [contains various email metadata](https://max.ge/aiml_midterm/a_migineishvili25_93254_csv/).
 * **Feature Analysis:** The model analyzes attributes such as word count, the density of links, the frequency of capitalized words, and specific spam-trigger keywords to make its predictions.
 
 
